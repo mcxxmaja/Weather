@@ -12,6 +12,7 @@
 		280D0EA62BF37F3A001CE073 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0EA52BF37F3A001CE073 /* Item.swift */; };
 		280D0EA82BF37F3D001CE073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280D0EA72BF37F3D001CE073 /* Assets.xcassets */; };
 		280D0EAB2BF37F3D001CE073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280D0EAA2BF37F3D001CE073 /* Preview Assets.xcassets */; };
+		280D0EB22BF3C0B5001CE073 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0EB12BF3C0B5001CE073 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		280D0EA52BF37F3A001CE073 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		280D0EA72BF37F3D001CE073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280D0EAA2BF37F3D001CE073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		280D0EB12BF3C0B5001CE073 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				280D0EA12BF37F3A001CE073 /* WeatherApp.swift */,
 				280D0EA32BF37F3A001CE073 /* ContentView.swift */,
+				280D0EB12BF3C0B5001CE073 /* WeatherButton.swift */,
 				280D0EA52BF37F3A001CE073 /* Item.swift */,
 				280D0EA72BF37F3D001CE073 /* Assets.xcassets */,
 				280D0EA92BF37F3D001CE073 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				280D0EA42BF37F3A001CE073 /* ContentView.swift in Sources */,
 				280D0EA62BF37F3A001CE073 /* Item.swift in Sources */,
+				280D0EB22BF3C0B5001CE073 /* WeatherButton.swift in Sources */,
 				280D0EA22BF37F3A001CE073 /* WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
