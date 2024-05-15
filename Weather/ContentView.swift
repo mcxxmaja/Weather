@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            BackgroundView(isNight: $isNight)
+            BackgroundView(isNight: isNight)
             VStack(spacing: 8) {
                 CityTextView(cityName: "Cupertino, SA")
                 
@@ -68,8 +68,9 @@ struct WeatherDayView: View {
             Text(dayOfWeek)
                 .font(.system(size: 16, weight: .medium))
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
+//                .foregroundStyle(.pink, .yellow, .gray)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             Text("\(temperature)°")
@@ -81,13 +82,12 @@ struct WeatherDayView: View {
 }
 
 struct BackgroundView: View {
-    @Binding var isNight: Bool
+    var isNight: Bool // no need to use @Binding if only reading the value
 
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue, isNight ? .gray : .lightBlue]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .edgesIgnoringSafeArea(.all)
+        ContainerRelativeShape()
+            .fill(isNight ? Color.black.gradient : Color.blue.gradient) //super subtle gradient
+            .ignoresSafeArea()
     }
 }
 
@@ -109,8 +109,9 @@ struct MainWeatherStatusView: View {
     var body: some View {
         VStack {
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
+//                .foregroundStyle(.pink, .yellow, .gray)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 180, height: 180)
             
